@@ -6,10 +6,11 @@
     <title>Mi Portafolio</title>
     <style>
         body { 
-            font-family: Arial, sans-serif; 
+            font-family: 'Poppins', sans-serif; 
             margin: 0; 
             padding: 0; 
-            background: linear-gradient(to right, #e0eafc, #cfdef3); 
+            background: linear-gradient(to right, #1e3c72, #2a5298); 
+            color: #fff;
         }
         .container { 
             display: flex; 
@@ -19,13 +20,14 @@
             padding: 20px;
         }
         .card { 
-            background: white; 
+            background: rgba(255, 255, 255, 0.9); 
             padding: 20px; 
             border-radius: 10px; 
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
             display: flex; 
             max-width: 900px; 
             width: 90%; 
+            color: #333;
         }
         .left, .right { padding: 20px; }
         .left { 
@@ -36,8 +38,9 @@
         .left img { 
             width: 150px; 
             border-radius: 50%; 
+            border: 3px solid #0077B5;
         }
-        .left h1 { margin: 10px 0; }
+        .left h1 { margin: 10px 0; font-size: 24px; }
         .left button, .right button { 
             padding: 10px 20px; 
             font-size: 16px; 
@@ -58,7 +61,11 @@
             text-decoration: none; 
         }
         .right { flex: 2; text-align: left; }
-        .right h2 { border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+        .right h2 { 
+            border-bottom: 2px solid #0077B5; 
+            padding-bottom: 5px; 
+            color: #0077B5;
+        }
         .right ul { list-style: none; padding: 0; }
         .right ul li { margin: 5px 0; }
     </style>
@@ -77,7 +84,7 @@
                 </div>
             </div>
             <div class="right">
-                <h2>/About Me</h2>
+                <h2>Sobre Mí</h2>
                 <p>Soy Gabriel Felipe Jaimes Gil, estudiante de Ingeniería de Sistemas con interés en el desarrollo de software y la inteligencia artificial. Me especializo en Python y el desarrollo de aplicaciones web y móviles, con enfoque en aprendizaje automático y seguridad de datos. Actualmente, estoy en constante aprendizaje y mejora de mis habilidades para crear soluciones eficientes y funcionales que aporten valor y resuelvan problemas del mundo real.</p>
                 <h2>Habilidades</h2>
                 <ul>
