@@ -9,13 +9,14 @@
             font-family: Arial, sans-serif; 
             margin: 0; 
             padding: 0; 
-            background: linear-gradient(to right, #f8f9fa, #e9ecef); 
+            background: linear-gradient(to right, #eef1f5, #dce1e6); 
         }
         .container { 
             display: flex; 
             justify-content: center; 
             align-items: center; 
-            height: 100vh; 
+            min-height: 100vh; 
+            padding: 20px;
         }
         .card { 
             background: white; 
@@ -37,20 +38,27 @@
             border-radius: 50%; 
         }
         .left h1 { margin: 10px 0; }
+        .left button, .right button { 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            background-color: #0077B5; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            margin: 5px; 
+        }
+        .left button:hover, .right button:hover {
+            background-color: #005a8c;
+        }
         .social-icons a { 
             margin: 0 5px; 
             font-size: 20px; 
             color: black; 
             text-decoration: none; 
         }
-        .right { 
-            flex: 2; 
-            text-align: left; 
-        }
-        .right h2 { 
-            border-bottom: 2px solid #ddd; 
-            padding-bottom: 5px; 
-        }
+        .right { flex: 2; text-align: left; }
+        .right h2 { border-bottom: 2px solid #ddd; padding-bottom: 5px; }
         .right ul { list-style: none; padding: 0; }
         .right ul li { margin: 5px 0; }
     </style>
@@ -70,7 +78,7 @@
             </div>
             <div class="right">
                 <h2>/About Me</h2>
-                <p>Soy Gabriel Felipe Jaimes Gil, estudiante de Ingeniería de Sistemas con interés en el desarrollo de software y la inteligencia artificial. Me especializo en Python y el desarrollo de aplicaciones web y móviles, con enfoque en aprendizaje automático y seguridad de datos.</p>
+                <p>Soy Gabriel Felipe Jaimes Gil, estudiante de Ingeniería de Sistemas con interés en el desarrollo de software y la inteligencia artificial. Me especializo en Python y el desarrollo de aplicaciones web y móviles, con enfoque en aprendizaje automático y seguridad de datos. Actualmente, estoy en constante aprendizaje y mejora de mis habilidades para crear soluciones eficientes y funcionales que aporten valor y resuelvan problemas del mundo real.</p>
                 <h2>Habilidades</h2>
                 <ul>
                     <li>Desarrollo en Python</li>
